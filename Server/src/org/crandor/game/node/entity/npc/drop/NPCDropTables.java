@@ -35,7 +35,7 @@ public final class NPCDropTables {
 	/**
 	 * The drop rates (0=common, 1=uncommon, 2=rare, 3=very rare).
 	 */
-	public static final int[] DROP_RATES = { 750, 150, 15, 5 };
+	public static final int[] DROP_RATES = { 7500, 1500, 150, 50 };
 	
 	/**
 	 * The npcs that will display drop messages

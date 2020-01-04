@@ -27,12 +27,12 @@ public final class Skills {
 	/**
 	 * Represents the constant modifier of experience.
 	 */
-	public static final double EXPERIENCE_MULTIPLIER = 20;
+	public static final double EXPERIENCE_MULTIPLIER = 25;
 
 	/**
 	 * The maximum experience multiplier.
 	 */
-	public static final double MAX_EXPERIENCE_MOD = 60.0;
+	public static final double MAX_EXPERIENCE_MOD = 70;
 
 	/**
 	 * Represents an array of skill names.
@@ -208,7 +208,7 @@ public final class Skills {
 	 * @param experience The experience.
 	 */
 	public void addExperience(int slot, double experience, boolean playerMod) {
-		double mod = getExperienceMod(slot, experience, playerMod, true);
+		double mod = getExperienceMod(slot, experience, playerMod);
 		final Player player = entity instanceof Player ? ((Player) entity) : null;
 		final AssistSession assist = entity.getExtension(AssistSession.class);
 		if (assist != null && assist.translateExperience(player, slot, experience, mod)) {
@@ -258,12 +258,12 @@ public final class Skills {
 	 * @param playerMod If player mods should be applied.
 	 * @return The experience mod.
 	 */
-	private double getExperienceMod(int slot, double experience, boolean playerMod, boolean multiplyer) {
+	private double getExperienceMod(int slot, double experience, boolean playerMod) {
 		//This function returns 1.0;
 		if (!(entity instanceof Player)) {
 			return 1.0;
 		}
-		double mod = multiplyer ? (EXPERIENCE_MULTIPLIER) : 1;
+		double mod = EXPERIENCE_MULTIPLIER;
 		Player p = (Player) entity;
 		if (p.getIronmanManager().getMode() == IronmanMode.ULTIMATE) {
 			mod /= 4;
@@ -271,7 +271,7 @@ public final class Skills {
 			mod /= 2;
 		}
 		//A boost for combat skills that are under level 65.
-		if(entity instanceof Player && !this.hasLevel(slot, 65) && isCombat(slot)){
+		if(!this.hasLevel(slot, 65) && isCombat(slot)){
 			mod *= 1.5;
 		}
 		//Grand Exchange region XP boost.
@@ -299,8 +299,7 @@ public final class Skills {
 		if (mod > MAX_EXPERIENCE_MOD ) {
 			return MAX_EXPERIENCE_MOD;
 		}
-		return 1.0;
-		//return mod;
+		return mod;
 	}
 
 /**

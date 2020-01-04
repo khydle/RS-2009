@@ -49,7 +49,7 @@ public final class IcePathZone extends MapZone implements Plugin<Object> {
 					if (player.getLocks().isMovementLocked()) {
 						return false;
 					}
-					player.getSettings().updateRunEnergy(100);
+					player.getSettings().updateRunEnergy(500);
 					player.getImpactHandler().manualHit(player, 1, HitsplatType.NORMAL);
 					int skill = RandomFunction.randomize(7);
 					if (skill == 3 || skill == 5) {

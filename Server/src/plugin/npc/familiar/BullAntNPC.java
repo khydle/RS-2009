@@ -40,7 +40,7 @@ public class BullAntNPC extends BurdenBeast {
 
 	@Override
 	protected boolean specialMove(FamiliarSpecial special) {
-		if (owner.getSettings().getRunEnergy() >= 100) {
+		if (owner.getSettings().getRunEnergy() >= 500) {
 			owner.getPacketDispatch().sendMessage("You already have full run energy.");
 			return false;
 		}

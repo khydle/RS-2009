@@ -169,7 +169,7 @@ public final class WalkingQueue {
 		if (player.getDetails().getShop().hasPerk(Perks.STAMINA_BOOST)) {
 			rate -= 0.2486 + 0.100;
 		}
-		return rate / 4;
+		return rate / 10;
 	}
 
 	/**
@@ -183,7 +183,7 @@ public final class WalkingQueue {
 			double percentage = player.getSkills().getLevel(Skills.AGILITY) * 0.40;
 			rate += percentage / 100 + 0.30;
 		}
-		return rate * 4;
+		return rate * 10;
 	}
 
 	/**
@@ -195,7 +195,7 @@ public final class WalkingQueue {
 			return;
 		}
 		Player p = (Player) entity;
-		if (!decrease && p.getSettings().getRunEnergy() >= 500.0) {
+		if (!decrease && p.getSettings().getRunEnergy() >= 100.0) {
 			return;
 		}
 		double drain = decrease ? getEnergyDrainRate(p) : -getEnergyRestore(p);

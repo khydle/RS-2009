@@ -106,7 +106,7 @@ public final class RottenPotatoPlugin extends OptionHandler {
 				break;
 			case "heal":
 			    player.getSettings().setSpecialEnergy(100);
-			    player.getSettings().updateRunEnergy(-500);
+			    player.getSettings().updateRunEnergy(-100);
 			    player.getSkills().setLifepointsIncrease(0);
 			    player.getSkills().rechargePrayerPoints();
 			    player.getSkills().heal(100);

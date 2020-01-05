@@ -483,7 +483,7 @@ public class Player extends Entity {
 	@Override
 	public void finalizeDeath(Entity killer) {
 		settings.setSpecialEnergy(100);
-		settings.updateRunEnergy(settings.getRunEnergy() - 500);
+		settings.updateRunEnergy(settings.getRunEnergy() - 100);
 		Player k = killer instanceof Player ? (Player) killer : this;
 		if (!k.isActive()) {
 			k = this;
@@ -594,7 +594,7 @@ public class Player extends Entity {
 	public void fullRestore() {
 		prayer.reset();
 		settings.setSpecialEnergy(100);
-		settings.updateRunEnergy(-500);
+		settings.updateRunEnergy(-100);
 		super.fullRestore();
 	}
 

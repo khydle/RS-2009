@@ -57,8 +57,8 @@ public final class EnergyTransferSpell extends MagicSpell {
 		final Player o = ((Player) target);
 		int hp = (int) Math.floor(player.getSkills().getLifepoints() * 0.10);
 		int run = hp;
-		if (run > (500 - o.getSettings().getRunEnergy())) {
-			run = (int) (500 - o.getSettings().getRunEnergy());
+		if (run > (100 - o.getSettings().getRunEnergy())) {
+			run = (int) (100 - o.getSettings().getRunEnergy());
 		}
 		if (run < 0) {
 			run = 0;

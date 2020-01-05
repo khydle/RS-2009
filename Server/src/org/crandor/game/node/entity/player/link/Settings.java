@@ -25,7 +25,7 @@ public final class Settings {
 	/**
 	 * The run energy.
 	 */
-	private double runEnergy = 500.0;
+	private double runEnergy = 100.0;
 
 	/**
 	 * The player's weight.
@@ -403,8 +403,8 @@ public final class Settings {
 		runEnergy -= drain;
 		if (runEnergy < 0) {
 			runEnergy = 0.0;
-		} else if (runEnergy > 500) {
-			runEnergy = 500.0;
+		} else if (runEnergy > 100) {
+			runEnergy = 100.0;
 		}
 		player.getPacketDispatch().sendRunEnergy();
 	}

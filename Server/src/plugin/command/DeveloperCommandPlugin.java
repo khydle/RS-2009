@@ -445,7 +445,7 @@ public final class DeveloperCommandPlugin extends CommandPlugin {
             case "hp":
             case "life":
                 player.getSettings().setSpecialEnergy(100);
-                player.getSettings().updateRunEnergy(-500);
+                player.getSettings().updateRunEnergy(-100);
                 player.getSkills().setLifepointsIncrease(0);
                 player.getSkills().rechargePrayerPoints();
                 player.getSkills().heal(100);

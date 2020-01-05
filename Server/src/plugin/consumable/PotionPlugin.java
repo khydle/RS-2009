@@ -231,7 +231,7 @@ public final class PotionPlugin implements Plugin<Object> {
 		@Override
 		public void consume(final Item item, final Player player) {
 			player.getSkills().heal(3);
-			player.getSettings().updateRunEnergy(-(500 * 0.10));
+			player.getSettings().updateRunEnergy(-(100 * 0.10));
 			super.consume(item, player);
 		}
 

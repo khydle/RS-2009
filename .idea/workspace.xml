@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30ea45b9-ec6c-429a-b4dc-a876070cf30e" name="Default Changelist" comment="">
+    <list default="true" id="30ea45b9-ec6c-429a-b4dc-a876070cf30e" name="Default Changelist" comment="chore: switch ip to local">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/data/eco/offer_dispatch_db.emp" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/data/eco/offer_dispatch_db.emp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/org/crandor/game/content/skill/Skills.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/org/crandor/game/content/skill/Skills.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/org/runite/METAs/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/plugin/activity/pestcontrol/reward/PCRewardInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/plugin/activity/pestcontrol/reward/PCRewardInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/plugin/interaction/inter/ExperienceLampInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/plugin/interaction/inter/ExperienceLampInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/data/eco/offer_dispatch_db.emp" beforeDir="false" afterPath="$PROJECT_DIR$/Server/data/eco/offer_dispatch_db.emp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/org/crandor/game/content/skill/Skills.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/org/crandor/game/content/skill/Skills.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/org/runite/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/org/runite/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/org/runite/Configurations.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/org/runite/Configurations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/org/runite/GameLaunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/org/runite/GameLaunch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/org/runite/jagex/GameShell.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/org/runite/jagex/GameShell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/org/runite/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/org/runite/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/org/runite/Configurations.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/org/runite/Configurations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/org/runite/GameLaunch.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/org/runite/GameLaunch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/org/runite/jagex/GameShell.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/org/runite/jagex/GameShell.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/CompiledServer/production/Client" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -150,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578201143756</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: new exp curve">
+      <created>1578345345734</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578345345734</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +195,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="feat: refactored run energy to be 100 again with a reduced drain and increased regen and increased drop rate by 20" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: refactored run energy to be 100 again with a reduced drain and increased regen and increased drop rate by 20" />
+    <MESSAGE value="feat: new exp curve" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: new exp curve" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="214" key="#Project_Structure" timestamp="1578132232043">
@@ -198,10 +207,10 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="393" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578222004786" />
-    <state x="366" y="179" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578345313344">
+    <state x="366" y="179" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578345367884">
       <screen x="0" y="31" width="1280" height="689" />
     </state>
-    <state x="366" y="179" key="#com.intellij.fileTypes.FileTypeChooser/0.31.1280.689@0.31.1280.689" timestamp="1578345313344" />
+    <state x="366" y="179" key="#com.intellij.fileTypes.FileTypeChooser/0.31.1280.689@0.31.1280.689" timestamp="1578345367884" />
     <state x="1055" y="230" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1578131269751">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -214,10 +223,12 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="756" y="415" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578219743222" />
-    <state x="569" y="150" width="1288" height="809" key="CommitChangelistDialog2" timestamp="1578201141317">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state x="0" y="0" width="1920" height="1080" key="CommitChangelistDialog2" timestamp="1578346711981">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="0" y="0" width="1920" height="1080" key="CommitChangelistDialog2/0.0.1920.1080/-1920.30.1920.1050@0.0.1920.1080" timestamp="1578346711981" />
     <state x="569" y="150" width="1288" height="809" key="CommitChangelistDialog2/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578201141317" />
+    <state x="379" y="31" key="CommitChangelistDialog2/0.31.1280.689@0.31.1280.689" timestamp="1578345864104" />
     <state x="92" y="122" width="1736" height="866" key="DiffContextDialog" timestamp="1578201050759">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -242,22 +253,27 @@
     </state>
     <state width="1899" height="388" key="GridCell.Tab.0.right/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578229193944" />
     <state width="1259" height="430" key="GridCell.Tab.0.right/0.31.1280.689@0.31.1280.689" timestamp="1578301801701" />
-    <state x="705" y="94" width="1015" height="849" key="SettingsEditor" timestamp="1578222290132">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state x="705" y="66" width="1015" height="849" key="SettingsEditor" timestamp="1578346295005">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="705" y="66" key="SettingsEditor/0.0.1920.1080/-1920.30.1920.1050@0.0.1920.1080" timestamp="1578346295005" />
     <state x="705" y="94" width="1015" height="849" key="SettingsEditor/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578222290132" />
-    <state x="552" y="289" key="Vcs.Push.Dialog.v2" timestamp="1578140377846">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1578346723355">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1080/-1920.30.1920.1050@0.0.1920.1080" timestamp="1578346723355" />
     <state x="552" y="289" key="Vcs.Push.Dialog.v2/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578140377846" />
+    <state x="368" y="189" key="Vcs.Push.Dialog.v2/0.31.1280.689@0.31.1280.689" timestamp="1578345831837" />
     <state x="769" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578139672768">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="769" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578139672768" />
-    <state x="926" y="156" width="607" height="804" key="find.popup" timestamp="1578222783235">
-      <screen x="0" y="30" width="1920" height="1050" />
+    <state x="807" y="130" width="1113" height="841" key="find.popup" timestamp="1578346700776">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="807" y="130" width="1113" height="841" key="find.popup/0.0.1920.1080/-1920.30.1920.1050@0.0.1920.1080" timestamp="1578346700776" />
     <state x="926" y="156" width="607" height="804" key="find.popup/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578222783235" />
+    <state x="538" y="114" width="742" height="536" key="find.popup/0.31.1280.689@0.31.1280.689" timestamp="1578345787782" />
     <state x="415" y="181" width="672" height="445" key="search.everywhere.popup" timestamp="1578300508750">
       <screen x="0" y="31" width="1280" height="689" />
     </state>

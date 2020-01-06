@@ -15,7 +15,7 @@ NOTICE: THIS IS THE LIVESERVER CLIENT. For development purposes, use GameLaunch.
  */
 public class Client {
 
-	public static final String PUBLIC_IP_ADDRESS = "35.188.69.167";
+	public static final String PUBLIC_IP_ADDRESS = "192.168.1.74";
 
 	/**
 	 * The game settings.

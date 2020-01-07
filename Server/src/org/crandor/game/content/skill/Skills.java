@@ -268,19 +268,19 @@ public final class Skills {
 		Player p = (Player) entity;
 
 		if(hasLevel(slot, 50)){
-			mod *= 1.25;
+			mod *= 1.4;
 		}
 		if(hasLevel(slot, 60)){
-			mod *= 1.25;
+			mod *= 1.5;
 		}
 		if(hasLevel(slot, 70)){
-			mod *= 1.25;
+			mod *= 1.7;
 		}
 		if(hasLevel(slot, 80)){
-			mod *= 1.25;
+			mod *= 1.8;
 		}
 		if(hasLevel(slot, 90)){
-			mod *= 1.25;
+			mod *= 1.9;
 		}
 		//A boost for combat skills that are under level 65.
 		if(isCombat(slot)){
@@ -288,8 +288,11 @@ public final class Skills {
 		}
 
 		// A boost for slow skills
-		if(slot == RUNECRAFTING || slot == AGILITY || slot == FARMING){
+		if(slot == FARMING || slot == HERBLORE){
 			mod *=2;
+		}
+		if(slot == AGILITY || slot == RUNECRAFTING || slot == SMITHING) {
+			mod *=4;
 		}
 		return mod;
 	}

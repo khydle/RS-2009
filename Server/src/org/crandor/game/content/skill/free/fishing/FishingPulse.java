@@ -127,7 +127,7 @@ public final class FishingPulse extends SkillPulse<NPC> {
 	@Override
 	public boolean reward() {
 		if (getDelay() == 1) {
-			super.setDelay(5);
+			super.setDelay(4);
 			return false;
 		}
 		if (node.getId() == 333 && player.getZoneMonitor().isInZone("karamja") && player.getLocation().withinDistance(new Location(2924, 3178, 0), 10) && !player.getAchievementDiaryManager().hasCompletedTask(DiaryType.KARAMJA, 0, 6)) {

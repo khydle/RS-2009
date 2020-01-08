@@ -30,8 +30,8 @@ public class Client {
 	 */
 	public static void main(String[]args) {
 		System.out.println("Running liveserver client");
-		Configurations.LOCAL_SERVER = false;
-		Configurations.LOCAL_MS = false;
+		Configurations.LOCAL_SERVER = true;
+		Configurations.LOCAL_MS = true;
 		Configurations.MS_IP = Configurations.LOCAL_MS ? "127.0.0.1" : PUBLIC_IP_ADDRESS; //Needs to be done because of order it's otherwise set
 
 		for (int i = 0; i < args.length; i++) {

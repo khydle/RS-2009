@@ -290,10 +290,7 @@ public final class NPCDropTables {
 	 * Prepares the table.
 	 */
 	public void prepare() {
-		double rate = 0.0;
-		if (EconomyManagement.getEcoState() == EcoStatus.BOOSTING) {
-			rate = EconomyManagement.getModificationRate();
-		}
+		double rate = 10000;
 		prepare(rate);
 	}
 
@@ -307,13 +304,7 @@ public final class NPCDropTables {
 		int itemId = item.getDefinition().isUnnoted() ? item.getId() : item.getNoteChange();
 		if (player != null && npc.getProperties().isMultiZone() && (GrandExchangeDatabase.getDatabase().get(itemId) != null || item.getName().endsWith("charm")) && player.getCommunication().getClan() != null && player.getCommunication().isLootShare() && player.getCommunication().getLootRequirement().ordinal() >= player.getCommunication().getClan().getLootRequirement().ordinal() && !player.getIronmanManager().isIronman()) {
 			Player looter = player;
-			List<Player> players = RegionManager.getLocalPlayers(npc, 16);
-			List<Player> looters = new ArrayList<>();
-			for (Player p : players) {
-				if (p != null && p.getCommunication().getClan() != null && p.getCommunication().getClan() == player.getCommunication().getClan() && p.getCommunication().isLootShare() && p.getCommunication().getLootRequirement().ordinal() >= p.getCommunication().getClan().getLootRequirement().ordinal() && npc.getImpactHandler().getImpactLog().containsKey(p)) {
-					looters.add(p);
-				}
-			}
+			List<Player> looters = RegionManager.getLocalPlayers(npc, 16);
 			if (looters.size() > 1) {
 				int highestLsp = 0;
 				for (Player p : looters) {

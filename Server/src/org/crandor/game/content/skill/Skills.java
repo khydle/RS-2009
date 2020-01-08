@@ -288,11 +288,14 @@ public final class Skills {
 		}
 
 		// A boost for slow skills
-		if(slot == FARMING || slot == HERBLORE){
+		if(slot == CRAFTING){
 			mod *=2;
 		}
-		if(slot == AGILITY || slot == RUNECRAFTING || slot == SMITHING) {
+		if(slot == RUNECRAFTING || slot == SMITHING || slot == FARMING || slot == HERBLORE) {
 			mod *=4;
+		}
+		if(slot == AGILITY){
+			mod *=80;
 		}
 		return mod;
 	}

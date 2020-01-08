@@ -82,23 +82,23 @@ public final class ModernTeleportPlugin extends MagicSpell {
 		// home
 		SpellBook.MODERN.register(0, new ModernTeleportPlugin(0, 0, ServerConstants.HOME_LOCATION));
 		// varrock
-		SpellBook.MODERN.register(15, new ModernTeleportPlugin(25, 35, Location.create(3213, 3424, 0)));
+		SpellBook.MODERN.register(15, new ModernTeleportPlugin(25, 0, Location.create(3213, 3424, 0)));
 		// lumby
-		SpellBook.MODERN.register(18, new ModernTeleportPlugin(31, 41, Location.create(3221, 3219, 0)));
+		SpellBook.MODERN.register(18, new ModernTeleportPlugin(31, 0, Location.create(3221, 3219, 0)));
 		// fally
-		SpellBook.MODERN.register(21, new ModernTeleportPlugin(37, 47, Location.create(2965, 3378, 0)));
+		SpellBook.MODERN.register(21, new ModernTeleportPlugin(37, 0, Location.create(2965, 3378, 0)));
 		// house
-		SpellBook.MODERN.register(23, new ModernTeleportPlugin(40, 50, ServerConstants.HOME_LOCATION));
+		SpellBook.MODERN.register(23, new ModernTeleportPlugin(40, 0, ServerConstants.HOME_LOCATION));
 		// camelot
-		SpellBook.MODERN.register(26, new ModernTeleportPlugin(45, 55.5, Location.create(2758, 3478, 0)));
+		SpellBook.MODERN.register(26, new ModernTeleportPlugin(45, 0, Location.create(2758, 3478, 0)));
 		// ardougne
-		SpellBook.MODERN.register(32, new ModernTeleportPlugin(51, 61, Location.create(2662, 3307, 0)));
+		SpellBook.MODERN.register(32, new ModernTeleportPlugin(51, 0, Location.create(2662, 3307, 0)));
 		// watchtower
-		SpellBook.MODERN.register(37, new ModernTeleportPlugin(58, 68, Location.create(2549, 3112, 0)));
+		SpellBook.MODERN.register(37, new ModernTeleportPlugin(58, 0, Location.create(2549, 3112, 0)));
 		// trollheim
-		SpellBook.MODERN.register(44, new ModernTeleportPlugin(61, 68, Location.create(2891, 3678, 0)));
+		SpellBook.MODERN.register(44, new ModernTeleportPlugin(61, 0, Location.create(2891, 3678, 0)));
 		// ape atol
-		SpellBook.MODERN.register(47, new ModernTeleportPlugin(64, 74, Location.create(2754, 2784, 0), new Item(1963, 1)));
+		SpellBook.MODERN.register(47, new ModernTeleportPlugin(64, 10, Location.create(2754, 2784, 0), new Item(1963, 1)));
 		return this;
 	}
 

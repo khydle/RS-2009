@@ -2,50 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30ea45b9-ec6c-429a-b4dc-a876070cf30e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RS-2009.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/09Scape_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/org/crandor/game/content/skill/free/gather/SkillingResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/org/crandor/game/content/skill/free/gather/SkillingResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/org/crandor/game/node/entity/npc/drop/NPCDropTables.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/org/crandor/game/node/entity/npc/drop/NPCDropTables.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CompiledServer/production/09Scape/plugin/skill/magic/ModernTeleportPlugin.class" beforeDir="false" afterPath="$PROJECT_DIR$/CompiledServer/production/09Scape/plugin/skill/magic/ModernTeleportPlugin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/org/crandor/game/content/skill/free/gather/SkillingResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/org/crandor/game/content/skill/free/gather/SkillingResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/org/crandor/game/node/entity/npc/drop/NPCDropTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/org/crandor/game/node/entity/npc/drop/NPCDropTables.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Management-Server/src/org/keldagrim/Management.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/src/org/crandor/Server.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Client/src/org/runite/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -54,132 +29,55 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>tutorial</find>
-      <find>login</find>
-      <find>starter</find>
-      <find>setlastlogin</find>
-      <find>HOME</find>
-      <find>home teleport</find>
-      <find>mystical foresig</find>
-    </findStrings>
-    <dirStrings>
-      <dir>C:\Users\Michael\Desktop\rsps_trash\rs2009\Server\src\plugin\interaction\item</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/khydle/RS-2009.git" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1SoCmFrlg0BRp0t2EAHW2CVwxLb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="runite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Management-Server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Management-Server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RS-2009" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RS-2009" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="Server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="crandor" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578360598759" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Client/lib" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CompiledServer/production/Client" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Application.GameLaunch">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.runite.Client" />
+      <module name="09Scape" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.runite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GameLaunch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.runite.GameLaunch" />
-      <module name="RS-2009" />
+      <module name="09Scape" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.runite.*" />
@@ -192,7 +90,7 @@
     </configuration>
     <configuration name="Management" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.keldagrim.Management" />
-      <module name="RS-2009" />
+      <module name="09Scape" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.keldagrim.*" />
@@ -206,7 +104,7 @@
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="MAIN_CLASS_NAME" value="org.crandor.Server" />
-      <module name="RS-2009" />
+      <module name="09Scape" />
       <option name="VM_PARAMETERS" value="-Xmx1024m" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Server" />
       <extension name="coverage">
@@ -220,17 +118,31 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.GameLaunch" />
       <item itemvalue="Application.Management" />
       <item itemvalue="Application.Server" />
-      <item itemvalue="Application.GameLaunch" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.GameLaunch" />
         <item itemvalue="Application.Server" />
         <item itemvalue="Application.Management" />
+        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -244,43 +156,56 @@
       <updated>1572220718424</updated>
       <workItem from="1573670084843" duration="262000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: refactored run energy to be 100 again with a reduced drain and increased regen and increased drop rate by 20">
+      <created>1578201143756</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578201143756</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: new exp curve">
+      <created>1578345345734</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578345345734</updated>
+    </task>
+    <task id="LOCAL-00003" summary="chore: switch ip to local">
+      <created>1578346731397</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578346731397</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: exp adjustments, selling normalized, teleports no costs">
+      <created>1578431479544</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1578431479545</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: exp adjustments, drop for all, teleports no exp, resource gethering faster but exp nerf, and other smaller adjustments">
+      <created>1578467272583</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578467272583</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1036" extended-state="6" />
-    <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Build" weight="0.32969433" />
-      <window_info anchor="bottom" id="Messages" weight="0.32969433" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32969433" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -288,12 +213,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -315,101 +234,131 @@
       </map>
     </option>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Management-Server/src/org/keldagrim/Management.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/src/org/crandor/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/org/runite/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="feat: refactored run energy to be 100 again with a reduced drain and increased regen and increased drop rate by 20" />
+    <MESSAGE value="feat: new exp curve" />
+    <MESSAGE value="chore: switch ip to local" />
+    <MESSAGE value="feat: exp adjustments, selling normalized, teleports no costs" />
+    <MESSAGE value="feat: exp adjustments, drop for all, teleports no exp, resource gethering faster but exp nerf, and other smaller adjustments" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: exp adjustments, drop for all, teleports no exp, resource gethering faster but exp nerf, and other smaller adjustments" />
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>RS-2009</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="552" y="214" key="#Project_Structure" timestamp="1578132232043">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="552" y="214" key="#Project_Structure/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578132232043" />
+    <state x="393" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578222004786">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="393" y="166" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578222004786" />
+    <state x="366" y="179" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578345367884">
+      <screen x="0" y="31" width="1280" height="689" />
+    </state>
+    <state x="366" y="179" key="#com.intellij.fileTypes.FileTypeChooser/0.31.1280.689@0.31.1280.689" timestamp="1578345367884" />
+    <state x="1055" y="230" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1578131269751">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="1055" y="230" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578131269751" />
+    <state x="691" y="481" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1578219674624">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="691" y="481" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578219674624" />
+    <state x="756" y="415" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1578219743222">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="756" y="415" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578219743222" />
+    <state x="-1920" y="30" width="1920" height="1080" key="CommitChangelistDialog2" timestamp="1578467269712">
+      <screen x="-1920" y="30" width="1920" height="1050" />
+    </state>
+    <state x="-1920" y="30" key="CommitChangelistDialog2/0.0.1920.1080/-1920.30.1920.1050@-1920.30.1920.1050" timestamp="1578467269712" />
+    <state x="0" y="0" width="1920" height="1080" key="CommitChangelistDialog2/0.0.1920.1080/-1920.30.1920.1050@0.0.1920.1080" timestamp="1578431473918" />
+    <state x="569" y="150" width="1288" height="809" key="CommitChangelistDialog2/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578201141317" />
+    <state x="379" y="31" key="CommitChangelistDialog2/0.31.1280.689@0.31.1280.689" timestamp="1578345864104" />
+    <state x="92" y="95" width="1536" height="916" key="DiffContextDialog" timestamp="1578604632978">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1828" y="122" width="1536" height="890" key="DiffContextDialog/0.0.1920.1080/-1920.30.1920.1050@-1920.30.1920.1050" timestamp="1578467234027" />
+    <state x="92" y="95" width="1536" height="916" key="DiffContextDialog/0.0.1920.1080/-1920.30.1920.1050@0.0.1920.1080" timestamp="1578604632978" />
+    <state x="92" y="122" width="1736" height="866" key="DiffContextDialog/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578201050759" />
+    <state width="948" height="394" key="GridCell.Tab.0.bottom" timestamp="1578561914176">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="948" height="224" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.30.1920.1050@-1920.30.1920.1050" timestamp="1578456611536" />
+    <state width="948" height="394" key="GridCell.Tab.0.bottom/0.0.1920.1080/-1920.30.1920.1050@0.0.1920.1080" timestamp="1578561914176" />
+    <state width="1899" height="388" key="GridCell.Tab.0.bottom/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578229193944" />
+    <state width="1259" height="430" key="GridCell.Tab.0.bottom/0.31.1280.689@0.31.1280.689" timestamp="1578301801701" />
+    <state width="948" height="394" key="GridCell.Tab.0.center" timestamp="1578561914176">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="948" height="224" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.30.1920.1050@-1920.30.1920.1050" timestamp="1578456611536" />
+    <state width="948" height="394" key="GridCell.Tab.0.center/0.0.1920.1080/-1920.30.1920.1050@0.0.1920.1080" timestamp="1578561914176" />
+    <state width="1899" height="388" key="GridCell.Tab.0.center/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578229193944" />
+    <state width="1259" height="430" key="GridCell.Tab.0.center/0.31.1280.689@0.31.1280.689" timestamp="1578301801701" />
+    <state width="948" height="394" key="GridCell.Tab.0.left" timestamp="1578561914176">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="948" height="224" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.30.1920.1050@-1920.30.1920.1050" timestamp="1578456611536" />
+    <state width="948" height="394" key="GridCell.Tab.0.left/0.0.1920.1080/-1920.30.1920.1050@0.0.1920.1080" timestamp="1578561914176" />
+    <state width="1899" height="388" key="GridCell.Tab.0.left/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578229193943" />
+    <state width="1259" height="430" key="GridCell.Tab.0.left/0.31.1280.689@0.31.1280.689" timestamp="1578301801701" />
+    <state width="948" height="394" key="GridCell.Tab.0.right" timestamp="1578561914176">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="948" height="224" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.30.1920.1050@-1920.30.1920.1050" timestamp="1578456611536" />
+    <state width="948" height="394" key="GridCell.Tab.0.right/0.0.1920.1080/-1920.30.1920.1050@0.0.1920.1080" timestamp="1578561914176" />
+    <state width="1899" height="388" key="GridCell.Tab.0.right/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578229193944" />
+    <state width="1259" height="430" key="GridCell.Tab.0.right/0.31.1280.689@0.31.1280.689" timestamp="1578301801701" />
+    <state x="705" y="66" width="1015" height="849" key="SettingsEditor" timestamp="1578346295005">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="705" y="66" key="SettingsEditor/0.0.1920.1080/-1920.30.1920.1050@0.0.1920.1080" timestamp="1578346295005" />
+    <state x="705" y="94" width="1015" height="849" key="SettingsEditor/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578222290132" />
+    <state x="734" y="245" key="VCS.ChangeListViewerDialog" timestamp="1578543846461">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="734" y="245" key="VCS.ChangeListViewerDialog/0.0.1920.1080/-1920.30.1920.1050@0.0.1920.1080" timestamp="1578543846461" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2" timestamp="1578604631640">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1368" y="271" key="Vcs.Push.Dialog.v2/0.0.1920.1080/-1920.30.1920.1050@-1920.30.1920.1050" timestamp="1578467274501" />
+    <state x="552" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1080/-1920.30.1920.1050@0.0.1920.1080" timestamp="1578604631640" />
+    <state x="552" y="289" key="Vcs.Push.Dialog.v2/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578140377846" />
+    <state x="368" y="189" key="Vcs.Push.Dialog.v2/0.31.1280.689@0.31.1280.689" timestamp="1578345831837" />
+    <state x="769" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578139672768">
+      <screen x="0" y="30" width="1920" height="1050" />
+    </state>
+    <state x="769" y="473" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578139672768" />
+    <state x="807" y="130" width="1113" height="841" key="find.popup" timestamp="1578551428942">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1113" y="156" width="1113" height="818" key="find.popup/0.0.1920.1080/-1920.30.1920.1050@-1920.30.1920.1050" timestamp="1578467192098" />
+    <state x="807" y="130" width="1113" height="841" key="find.popup/0.0.1920.1080/-1920.30.1920.1050@0.0.1920.1080" timestamp="1578551428942" />
+    <state x="926" y="156" width="607" height="804" key="find.popup/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578222783235" />
+    <state x="538" y="114" width="742" height="536" key="find.popup/0.31.1280.689@0.31.1280.689" timestamp="1578345787782" />
+    <state x="623" y="235" width="1008" height="698" key="search.everywhere.popup" timestamp="1578551208933">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="-1297" y="258" width="1008" height="679" key="search.everywhere.popup/0.0.1920.1080/-1920.30.1920.1050@-1920.30.1920.1050" timestamp="1578467211383" />
+    <state x="623" y="235" width="1008" height="698" key="search.everywhere.popup/0.0.1920.1080/-1920.30.1920.1050@0.0.1920.1080" timestamp="1578551208933" />
+    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050/-1920.0.1920.1080@0.30.1920.1050" timestamp="1578228325205" />
+    <state x="415" y="181" width="672" height="445" key="search.everywhere.popup/0.31.1280.689@0.31.1280.689" timestamp="1578300508750" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/org/crandor/game/node/entity/player/Player.java</url>
+          <line>809</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/RS_2009$Server.ic" NAME="Server Coverage Results" MODIFIED="1578426159232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.crandor.*</FILTER>
+    </SUITE>
   </component>
 </project>

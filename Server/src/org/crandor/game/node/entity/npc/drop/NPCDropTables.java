@@ -35,13 +35,12 @@ public final class NPCDropTables {
 	/**
 	 * The drop rates (0=common, 1=uncommon, 2=rare, 3=very rare).
 	 */
-	public static final int[] DROP_RATES = { 25000, 18000, 16000, 15000 };
-	
+	public static final int[] DROP_RATES = { 750, 150, 15, 5 };
 	/**
 	 * The npcs that will display drop messages
 	 */
 	public static final int[] MESSAGE_NPCS = { 50, 7133, 7134, 2881, 2882, 2883, 3200, 3340, 6247, 6203, 6260, 6222, 2745, 1160, 8133, 8610, 8611, 8612, 8613, 8614, 6204, 6206, 6208, 6261, 6263, 6265, 6223, 6225, 6227 };
-	
+
 	/**
 	 * The default drop table (holding the 100% drops).
 	 */
@@ -118,9 +117,9 @@ public final class NPCDropTables {
 			}
 		}
 		if (!mainTable.isEmpty()) {
-			if (mainTable.size() == 1 && RandomFunction.random(400) > 10 && npc.getId() != 49) {
-				return;// temp for npcs with 1 drop size table.
-			}
+//			if (mainTable.size() == 1 && RandomFunction.random(2) > 1 && npc.getId() != 49) {
+//				return;// temp for npcs with 1 drop size table.
+//			}
 			if (p != null && npc.getDefinition().getConfigurations().containsKey(NPCConfigSQLHandler.CLUE_LEVEL) && p.hasPerk(Perks.DETECTIVE) && RandomFunction.random(100) <= 5) {
 				Item item = new Item(2677);
 				createDrop(item, p, npc, npc.getDropLocation());
@@ -132,7 +131,7 @@ public final class NPCDropTables {
 				if (item.getSetRate() != -1) {
 					//p.sendMessage("Rate is <col=CC0000>1/"+item.getSetRate()+"</col> for <col=CC0000>"+item.getName()+"</col>.");
 					int rand = RandomFunction.random(item.getSetRate());
-					if (rand == 1) {						
+					if (rand == 1) {
 						createDrop(item.getRandomItem(), p, npc, npc.getDropLocation());
 						return;
 					}
@@ -155,7 +154,7 @@ public final class NPCDropTables {
 				}
 			}
 		}
-		if (RandomFunction.randomize(45) == 1) {
+		if (RandomFunction.randomize(40005) == 1) {
 		    createDrop(new Item(6199, 1), p, npc, npc.getDropLocation());
 		}
 	}
@@ -256,10 +255,11 @@ public final class NPCDropTables {
 				if (item.getChanceRate() > 0.0) {
 					rate = item.getChanceRate();
 				}
-				
+
 				if (modRate != 0.0) {
 					rate += modRate;
 				}
+				// minus -1 because always isnt in DROP_RATES but is in the dropFrequency list
 				int rarity = (int) (DROP_RATES[item.getDropFrequency().ordinal() - 1] * rate);
 				item.setTableSlot(slot | ((slot += rarity) << 16));
 			}
@@ -290,7 +290,10 @@ public final class NPCDropTables {
 	 * Prepares the table.
 	 */
 	public void prepare() {
-		double rate = 10000;
+		double rate = 0.0;
+		if (EconomyManagement.getEcoState() == EcoStatus.BOOSTING) {
+			rate = EconomyManagement.getModificationRate();
+		}
 		prepare(rate);
 	}
 
@@ -348,7 +351,7 @@ public final class NPCDropTables {
 			}
 		}
 	}
-	
+
 	/**
 	 * Handles the bone crusher perk.
 	 * @param player The player
@@ -367,9 +370,9 @@ public final class NPCDropTables {
 			return false;
 		}
 		player.getSkills().addExperience(Skills.PRAYER, item.getAmount() * bone.getExperience());
-		return true;		
+		return true;
 	}
-	
+
 	/**
 	 * Gets the ratio for stabilizing NPC combat difficulty & drop rates.
 	 * @return The ratio.

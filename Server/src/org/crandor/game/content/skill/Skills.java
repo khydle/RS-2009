@@ -27,12 +27,13 @@ public final class Skills {
 	/**
 	 * Represents the constant modifier of experience.
 	 */
-	public static final double EXPERIENCE_MULTIPLIER = 20;
+	public static final double EXPERIENCE_MULTIPLIER = 30;
 
 	/**
 	 * The maximum experience multiplier.
+	 * No longer used
 	 */
-	public static final double MAX_EXPERIENCE_MOD = 60.0;
+	public static final double MAX_EXPERIENCE_MOD = 120;
 
 	/**
 	 * Represents an array of skill names.
@@ -208,7 +209,7 @@ public final class Skills {
 	 * @param experience The experience.
 	 */
 	public void addExperience(int slot, double experience, boolean playerMod) {
-		double mod = getExperienceMod(slot, experience, playerMod, true);
+		double mod = getExperienceMod(slot, experience, playerMod);
 		final Player player = entity instanceof Player ? ((Player) entity) : null;
 		final AssistSession assist = entity.getExtension(AssistSession.class);
 		if (assist != null && assist.translateExperience(player, slot, experience, mod)) {
@@ -258,49 +259,45 @@ public final class Skills {
 	 * @param playerMod If player mods should be applied.
 	 * @return The experience mod.
 	 */
-	private double getExperienceMod(int slot, double experience, boolean playerMod, boolean multiplyer) {
+	private double getExperienceMod(int slot, double experience, boolean playerMod) {
 		//This function returns 1.0;
 		if (!(entity instanceof Player)) {
 			return 1.0;
 		}
-		double mod = multiplyer ? (EXPERIENCE_MULTIPLIER) : 1;
+		double mod = EXPERIENCE_MULTIPLIER;
 		Player p = (Player) entity;
-		if (p.getIronmanManager().getMode() == IronmanMode.ULTIMATE) {
-			mod /= 4;
-		} else if (p.getIronmanManager().getMode() == IronmanMode.STANDARD) {
-			mod /= 2;
+
+		if(hasLevel(slot, 50)){
+			mod *= 1.4;
 		}
-		//A boost for combat skills that are under level 65.
-		if(entity instanceof Player && !this.hasLevel(slot, 65) && isCombat(slot)){
+		if(hasLevel(slot, 60)){
 			mod *= 1.5;
 		}
-		//Grand Exchange region XP boost.
-		if(entity.getViewport().getRegion().getRegionId() == 12598){
-			mod += 1.5;
+		if(hasLevel(slot, 70)){
+			mod *= 1.7;
 		}
-		// Pest control, XP halved during the game
-		if (entity.getViewport().getRegion().getRegionId() == 10536) {
-			mod *= .5;
+		if(hasLevel(slot, 80)){
+			mod *= 1.8;
 		}
-		if (SystemManager.getSystemConfig().isDoubleExp()) {
-			mod *= 2;
+		if(hasLevel(slot, 90)){
+			mod *= 1.9;
 		}
-		if (HolidayEvent.getCurrent() != null) {
-			HolidayEvent.getCurrent().addExperience(p, slot, experience);
+		//A boost for combat skills that are under level 65.
+		if(isCombat(slot)){
+			mod *= 1.35;
 		}
-		p.getAntiMacroHandler().registerExperience(slot, experience);
-		if (TutorialSession.getExtension(p).getStage() < TutorialSession.MAX_STAGE) {
-			mod = 1.0;
-		} else {
-			if (playerMod && p.getExperienceMod() != 0.0) {
-				mod *= p.getExperienceMod();
-			}
+
+		// A boost for slow skills
+		if(slot == CRAFTING){
+			mod *=2;
 		}
-		if (mod > MAX_EXPERIENCE_MOD ) {
-			return MAX_EXPERIENCE_MOD;
+		if(slot == RUNECRAFTING || slot == SMITHING || slot == FARMING || slot == HERBLORE) {
+			mod *=4;
 		}
-		return 1.0;
-		//return mod;
+		if(slot == AGILITY){
+			mod *=80;
+		}
+		return mod;
 	}
 
 /**

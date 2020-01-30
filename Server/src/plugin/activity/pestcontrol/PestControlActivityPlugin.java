@@ -40,7 +40,7 @@ public final class PestControlActivityPlugin extends ActivityPlugin {
 	/**
 	 * The minimum team size.
 	 */
-	protected static final int MIN_TEAM_SIZE = 5; //GameWorld.getSettings().isDevMode() ? 1 : 5;
+	protected static final int MIN_TEAM_SIZE = 1; //GameWorld.getSettings().isDevMode() ? 1 : 5;
 
 	/**
 	 * The maximum team size.
@@ -124,7 +124,7 @@ public final class PestControlActivityPlugin extends ActivityPlugin {
 				// type,
 				// default
 			} else if (success && p.getAttribute("pc_zeal", 0) >= 50) {
-				int amount = type.ordinal() + 2;
+				int amount = type.ordinal() + 50;
 				if (p.hasPerk(Perks.POWERPOINT)) {
 					amount *= 2;
 					p.sendMessage("<col=FF0000>You receive double the points!");

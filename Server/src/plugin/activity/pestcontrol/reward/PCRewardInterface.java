@@ -209,8 +209,8 @@ public final class PCRewardInterface extends ComponentPlugin {
 	 * @return the string to send.
 	 */
 	public static final String getSkillCondition(final Player player, final int skillId) {
-		if (player.getSkills().getStaticLevel(skillId) < 25) {
-			return RED + "Must reach level 25 first.";
+		if (player.getSkills().getStaticLevel(skillId) < 101) {
+			return RED + "Disabled";
 		}
 		return GREEN + getSkillXp(player, skillId);
 	}
@@ -637,12 +637,14 @@ public final class PCRewardInterface extends ComponentPlugin {
 		 * @return <code>True</code> if so.
 		 */
 		public boolean checkSkillRequirement(final Player player, final int option) {
-			if (player.getSkills().getLevel(skill) < 25) {
-				player.getPacketDispatch().sendMessage("The Void Knights will not offer training in skills which you have a level of");
-				player.getPacketDispatch().sendMessage("less than 25.");
-				return false;
-			}
-			return true;
+			player.getPacketDispatch().sendMessage("The Void Knights will not offer training in skills on this server");
+			return false;
+//			if (player.getSkills().getLevel(skill) < 25) {
+//				player.getPacketDispatch().sendMessage("The Void Knights will not offer training in skills which you have a level of");
+//				player.getPacketDispatch().sendMessage("less than 25.");
+//				return false;
+//			}
+//			return true;
 		}
 
 		/**

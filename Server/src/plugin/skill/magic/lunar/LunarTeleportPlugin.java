@@ -120,35 +120,35 @@ public final class LunarTeleportPlugin extends MagicSpell {
 		// home
 		SpellBook.LUNAR.register(16, new LunarTeleportPlugin(0, 0, Location.create(2100, 3914, 0), false));
 		// moonclan teleport
-		SpellBook.LUNAR.register(20, new LunarTeleportPlugin(69, 66, Location.create(2111, 3916, 0), false, new Item(Runes.LAW_RUNE.getId(), 1), new Item(Runes.ASTRAL_RUNE.getId(), 2), new Item(Runes.EARTH_RUNE.getId(), 2)));
+		SpellBook.LUNAR.register(20, new LunarTeleportPlugin(69, 0, Location.create(2111, 3916, 0), false));
 		// moonclan group teleport
-		SpellBook.LUNAR.register(33, new LunarTeleportPlugin(70, 67, Location.create(2111, 3916, 0), true, new Item(Runes.LAW_RUNE.getId(), 1), new Item(Runes.ASTRAL_RUNE.getId(), 2), new Item(Runes.EARTH_RUNE.getId(), 4)));
+		SpellBook.LUNAR.register(33, new LunarTeleportPlugin(70, 0, Location.create(2111, 3916, 0), true));
 		// ourina teleport
-		SpellBook.LUNAR.register(31, new LunarTeleportPlugin(71, 69, Location.create(2469, 3247, 0), false, new Item(Runes.LAW_RUNE.getId(), 1), new Item(Runes.ASTRAL_RUNE.getId(), 2), new Item(Runes.EARTH_RUNE.getId(), 6)));
+		SpellBook.LUNAR.register(31, new LunarTeleportPlugin(71, 0, Location.create(2469, 3247, 0), false));
 		// waterbirth teleport
-		SpellBook.LUNAR.register(24, new LunarTeleportPlugin(72, 71, Location.create(2527, 3739, 0), false, new Item(Runes.LAW_RUNE.getId(), 1), new Item(Runes.ASTRAL_RUNE.getId(), 2), new Item(Runes.WATER_RUNE.getId(), 1)));
+		SpellBook.LUNAR.register(24, new LunarTeleportPlugin(72, 0, Location.create(2527, 3739, 0), false));
 		// waterbirth group teleport
-		SpellBook.LUNAR.register(34, new LunarTeleportPlugin(73, 72, Location.create(2527, 3739, 0), true, new Item(Runes.LAW_RUNE.getId(), 1), new Item(Runes.ASTRAL_RUNE.getId(), 2), new Item(Runes.WATER_RUNE.getId(), 5)));
+		SpellBook.LUNAR.register(34, new LunarTeleportPlugin(73, 0, Location.create(2527, 3739, 0), true));
 		// barbarian post teleport.
-		SpellBook.LUNAR.register(0, new LunarTeleportPlugin(75, 76, Location.create(2544, 3572, 0), false, new Item(Runes.LAW_RUNE.getId(), 2), new Item(Runes.ASTRAL_RUNE.getId(), 2), new Item(Runes.FIRE_RUNE.getId(), 3)));
+		SpellBook.LUNAR.register(0, new LunarTeleportPlugin(75, 0, Location.create(2544, 3572, 0), false));
 		// barbarian group teleport
-		SpellBook.LUNAR.register(35, new LunarTeleportPlugin(77, 77, Location.create(2544, 3572, 0), true, new Item(Runes.LAW_RUNE.getId(), 2), new Item(Runes.ASTRAL_RUNE.getId(), 2), new Item(Runes.FIRE_RUNE.getId(), 6)));
+		SpellBook.LUNAR.register(35, new LunarTeleportPlugin(77, 0, Location.create(2544, 3572, 0), true));
 		// khzard teleport
-		SpellBook.LUNAR.register(18, new LunarTeleportPlugin(78, 80, Location.create(2656, 3157, 0), false, new Item(Runes.LAW_RUNE.getId(), 2), new Item(Runes.ASTRAL_RUNE.getId(), 2), new Item(Runes.WATER_RUNE.getId(), 4)));
+		SpellBook.LUNAR.register(18, new LunarTeleportPlugin(78, 0, Location.create(2656, 3157, 0), false));
 		// khzard group teleport
-		SpellBook.LUNAR.register(36, new LunarTeleportPlugin(79, 81, Location.create(2656, 3157, 0), true, new Item(Runes.LAW_RUNE.getId(), 2), new Item(Runes.ASTRAL_RUNE.getId(), 2), new Item(Runes.WATER_RUNE.getId(), 8)));
+		SpellBook.LUNAR.register(36, new LunarTeleportPlugin(79, 0, Location.create(2656, 3157, 0), true));
 		// fishing guild teleport
-		SpellBook.LUNAR.register(17, new LunarTeleportPlugin(85, 89, Location.create(2611, 3393, 0), false, new Item(Runes.LAW_RUNE.getId(), 3), new Item(Runes.ASTRAL_RUNE.getId(), 3), new Item(Runes.WATER_RUNE.getId(), 10)));
+		SpellBook.LUNAR.register(17, new LunarTeleportPlugin(85, 0, Location.create(2611, 3393, 0), false));
 		// fishing guild group teleport
-		SpellBook.LUNAR.register(37, new LunarTeleportPlugin(86, 90, Location.create(2611, 3393, 0), true, new Item(Runes.LAW_RUNE.getId(), 3), new Item(Runes.ASTRAL_RUNE.getId(), 3), new Item(Runes.WATER_RUNE.getId(), 14)));
+		SpellBook.LUNAR.register(37, new LunarTeleportPlugin(86, 0, Location.create(2611, 3393, 0), true));
 		// catherby teleport
-		SpellBook.LUNAR.register(21, new LunarTeleportPlugin(87, 92, Location.create(2804, 3433, 0), false, new Item(Runes.LAW_RUNE.getId(), 3), new Item(Runes.ASTRAL_RUNE.getId(), 3), new Item(Runes.WATER_RUNE.getId(), 10)));
+		SpellBook.LUNAR.register(21, new LunarTeleportPlugin(87, 0, Location.create(2804, 3433, 0), false));
 		// catherby group teleport
-		SpellBook.LUNAR.register(38, new LunarTeleportPlugin(88, 93, Location.create(2804, 3433, 0), true, new Item(Runes.LAW_RUNE.getId(), 3), new Item(Runes.ASTRAL_RUNE.getId(), 3), new Item(Runes.WATER_RUNE.getId(), 12)));
+		SpellBook.LUNAR.register(38, new LunarTeleportPlugin(88, 0, Location.create(2804, 3433, 0), true));
 		// ice plateua teleport
-		SpellBook.LUNAR.register(28, new LunarTeleportPlugin(89, 96, Location.create(2972, 3873, 0), false, new Item(Runes.LAW_RUNE.getId(), 3), new Item(Runes.ASTRAL_RUNE.getId(), 3), new Item(Runes.WATER_RUNE.getId(), 8)));
+		SpellBook.LUNAR.register(28, new LunarTeleportPlugin(89, 0, Location.create(2972, 3873, 0), false));
 		// ice plateua group teleport
-		SpellBook.LUNAR.register(39, new LunarTeleportPlugin(90, 99, Location.create(2972, 3873, 0), true, new Item(Runes.LAW_RUNE.getId(), 3), new Item(Runes.ASTRAL_RUNE.getId(), 3), new Item(Runes.WATER_RUNE.getId(), 16)));
+		SpellBook.LUNAR.register(39, new LunarTeleportPlugin(90, 0, Location.create(2972, 3873, 0), true));
 		return this;
 	}
 

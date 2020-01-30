@@ -574,14 +574,14 @@ public class Shop {
         if (amount < 1) {
             amount = getContainer(0).getAmount(item);
         }
-        int value = getSellValue(player, amount, item);
-        if (getCurrency() == TOKKUL) {
-            int tokkul = item.getDefinition().getConfiguration(ItemConfigSQLHandler.TOKKUL_PRICE, -1);
-            if (tokkul > 0) {
-                value = tokkul /= 10;
-            }
-        }
-        return value;
+        return getSellValue(player, amount, item);
+//        if (getCurrency() == TOKKUL) {
+//            int tokkul = item.getDefinition().getConfiguration(ItemConfigSQLHandler.TOKKUL_PRICE, -1);
+//            if (tokkul > 0) {
+//                value = tokkul /= 10;
+//            }
+//        }
+//        return value;
     }
 
     /**
@@ -592,21 +592,21 @@ public class Shop {
      * @return the selling value.
      */
     private int getSellValue(Player player, int amount, Item item) {
-        if (player.isDonator() && player.getZoneMonitor().isInZone("Donator Zone")) {
+//        if (player.isDonator() && player.getZoneMonitor().isInZone("Donator Zone")) {
             return (int) (item.getDefinition().getAlchemyValue(highAlch) * item.getAmount());
-        }
-        double diff = item.getDefinition().isStackable() ? 0.005 : 0.05;
-        double maxMod = 1.0 - (amount * diff);
-        if (maxMod < 0.25) {
-            maxMod = 0.25;
-        }
-        double minMod = maxMod - ((item.getAmount() - 1) * diff);
-        if (minMod < 0.25) {
-            minMod = 0.25;
-        }
-        double mod = (maxMod + minMod) / 2;
-        int value = (int) (item.getDefinition().getAlchemyValue(highAlch) * mod * item.getAmount());
-        return value;
+//        }
+//        double diff = item.getDefinition().isStackable() ? 0.005 : 0.05;
+//        double maxMod = 1.0 - (amount * diff);
+//        if (maxMod < 0.25) {
+//            maxMod = 0.25;
+//        }
+//        double minMod = maxMod - ((item.getAmount() - 1) * diff);
+//        if (minMod < 0.25) {
+//            minMod = 0.25;
+//        }
+//        double mod = (maxMod + minMod) / 2;
+//        int value = (int) (item.getDefinition().getAlchemyValue(highAlch) * mod * item.getAmount());
+//        return value;
     }
 
     /**

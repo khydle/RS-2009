@@ -48,7 +48,7 @@ public final class RewardChest {
 		if (mod > 80) {
 			mod = 80;
 		}
-		for (int i = 0; i < 2 + RandomFunction.random(3); i++) {
+		for (int i = 0; i < 13; i++) {
 			mod = RandomFunction.random(mod);
 			ChanceItem reward = null;
 			List<ChanceItem> list = Arrays.asList(DROP_TABLE);

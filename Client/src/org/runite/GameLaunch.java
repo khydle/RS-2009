@@ -31,6 +31,7 @@ public class GameLaunch {
 			switch (cmd[0]) {
 			case "ip":
 				SETTINGS.setIp(cmd[1]);
+				Configurations.MS_IP = cmd[1];
 				break;
 			case "world":
 				SETTINGS.setWorld(Integer.parseInt(cmd[1]));

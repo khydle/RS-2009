@@ -35,7 +35,7 @@ public final class NPCDropTables {
 	/**
 	 * The drop rates (0=common, 1=uncommon, 2=rare, 3=very rare).
 	 */
-	public static final int[] DROP_RATES = { 750, 150, 15, 5 };
+	public static final int[] DROP_RATES = { 750, 350, 250, 200 };
 	
 	/**
 	 * The npcs that will display drop messages
@@ -118,9 +118,9 @@ public final class NPCDropTables {
 			}
 		}
 		if (!mainTable.isEmpty()) {
-			if (mainTable.size() == 1 && RandomFunction.random(400) > 10 && npc.getId() != 49) {
-				return;// temp for npcs with 1 drop size table.
-			}
+//			if (mainTable.size() == 1 && RandomFunction.random(400) > 10 && npc.getId() != 49) {
+//				return;// temp for npcs with 1 drop size table.
+//			}
 			if (p != null && npc.getDefinition().getConfigurations().containsKey(NPCConfigSQLHandler.CLUE_LEVEL) && p.hasPerk(Perks.DETECTIVE) && RandomFunction.random(100) <= 5) {
 				Item item = new Item(2677);
 				createDrop(item, p, npc, npc.getDropLocation());
@@ -155,9 +155,9 @@ public final class NPCDropTables {
 				}
 			}
 		}
-		if (RandomFunction.randomize(45) == 1) {
-		    createDrop(new Item(6199, 1), p, npc, npc.getDropLocation());
-		}
+//		if (RandomFunction.randomize(45) == 1) {
+//		    createDrop(new Item(6199, 1), p, npc, npc.getDropLocation());
+//		}
 	}
 
 	/**

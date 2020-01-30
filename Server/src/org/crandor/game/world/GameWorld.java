@@ -186,7 +186,7 @@ public final class GameWorld {
         ScriptManager.load();
         PluginManager.init();
         ResourceAIPManager.get().init();
-        ResourceAIPManager.get().immerseWorld();
+//        ResourceAIPManager.get().immerseWorld();
         SQLManager.postPlugin();
         parseObjects();
         CallbackHub.call();

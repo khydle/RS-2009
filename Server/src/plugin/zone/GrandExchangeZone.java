@@ -55,7 +55,7 @@ public final class GrandExchangeZone extends MapZone implements Plugin<Object> {
 
 	@Override
 	public void configure() {
-//		addObjects();
+		addObjects();
 		PluginManager.definePlugin(new TeleporterDialogue(), new GnomeTravellerPlugin(), new RewardTraderDialogue());
 		ShopSQLHandler.getUidShops().put(1485756, CREDIT_STORE);
 		super.register(new ZoneBorders(3146, 3472, 3183, 3508));
@@ -685,30 +685,30 @@ public final class GrandExchangeZone extends MapZone implements Plugin<Object> {
 	 * The objects to spawn in the Grand Exchange Zone.
 	 */
 	private final void addObjects(){
-		ObjectBuilder.add(new GameObject(11402, new Location(3160, 3468)));
-		ObjectBuilder.add(new GameObject(11402, new Location(3159, 3468)));
-		ObjectBuilder.add(new GameObject(1161, new Location(3149, 3471)));
-		ObjectBuilder.add(new GameObject(1161, new Location(3149, 3470)));
-		ObjectBuilder.add(new GameObject(1161, new Location(3151, 3470)));
-		ObjectBuilder.add(new GameObject(1161, new Location(3150, 3470)));
-		ObjectBuilder.add(new GameObject(1161, new Location(3151, 3471)));
-		ObjectBuilder.add(new GameObject(1161, new Location(3150, 3471)));
-		ObjectBuilder.add(new GameObject(1161, new Location(3152, 3471)));
-		ObjectBuilder.add(new GameObject(1161, new Location(3152, 3470)));
-		ObjectBuilder.add(new GameObject(29954, new Location(3155, 3469)));
-		ObjectBuilder.add(new GameObject(2732, new Location(3182, 3474)));
-		ObjectBuilder.add(new GameObject(24343, new Location(3168, 3468), 10, 4));
-		ObjectBuilder.add(new GameObject(36781, new Location(3176, 3509)));
-		ObjectBuilder.add(new GameObject(17985, new Location(3179, 3471), 22, 1));
-		ObjectBuilder.add(new GameObject(2092, new Location(3153, 3510)));
-		ObjectBuilder.add(new GameObject(2092, new Location(3154, 3511)));
-		ObjectBuilder.add(new GameObject(2092, new Location(3152, 3513), 2));
-		ObjectBuilder.add(new GameObject(17010, new Location(3151, 3484), 1));
-		ObjectBuilder.add(new GameObject(6552, new Location(3149, 3487), 1));
-		ObjectBuilder.add(new GameObject(2096, new Location(3159, 3512)));
-		ObjectBuilder.add(new GameObject(2097, new Location(3157, 3513)));
-		ObjectBuilder.add(new GameObject(11666, Location.create(3142, 3487, 0)));
-		ObjectBuilder.add(new GameObject(2783, Location.create(3143, 3490, 0)));
-		ObjectBuilder.add(new GameObject(13656, Location.create(3173, 3485, 0)));
+//		ObjectBuilder.add(new GameObject(11402, new Location(3160, 3468)));
+//		ObjectBuilder.add(new GameObject(11402, new Location(3159, 3468)));
+//		ObjectBuilder.add(new GameObject(1161, new Location(3149, 3471)));
+//		ObjectBuilder.add(new GameObject(1161, new Location(3149, 3470)));
+//		ObjectBuilder.add(new GameObject(1161, new Location(3151, 3470)));
+//		ObjectBuilder.add(new GameObject(1161, new Location(3150, 3470)));
+//		ObjectBuilder.add(new GameObject(1161, new Location(3151, 3471)));
+//		ObjectBuilder.add(new GameObject(1161, new Location(3150, 3471)));
+//		ObjectBuilder.add(new GameObject(1161, new Location(3152, 3471)));
+//		ObjectBuilder.add(new GameObject(1161, new Location(3152, 3470)));
+//		ObjectBuilder.add(new GameObject(29954, new Location(3155, 3469)));
+//		ObjectBuilder.add(new GameObject(2732, new Location(3182, 3474)));
+//		ObjectBuilder.add(new GameObject(24343, new Location(3168, 3468), 10, 4));
+//		ObjectBuilder.add(new GameObject(36781, new Location(3176, 3509)));
+//		ObjectBuilder.add(new GameObject(17985, new Location(3179, 3471), 22, 1));
+//		ObjectBuilder.add(new GameObject(2092, new Location(3153, 3510)));
+//		ObjectBuilder.add(new GameObject(2092, new Location(3154, 3511)));
+//		ObjectBuilder.add(new GameObject(2092, new Location(3152, 3513), 2));
+		ObjectBuilder.add(new GameObject(17010, new Location(3171, 3468), 1));
+		ObjectBuilder.add(new GameObject(6552, new Location(3168, 3468), 4));
+//		ObjectBuilder.add(new GameObject(2096, new Location(3159, 3512)));
+//		ObjectBuilder.add(new GameObject(2097, new Location(3157, 3513)));
+//		ObjectBuilder.add(new GameObject(11666, Location.create(3142, 3487, 0)));
+//		ObjectBuilder.add(new GameObject(2783, Location.create(3143, 3490, 0)));
+//		ObjectBuilder.add(new GameObject(13656, Location.create(3173, 3485, 0)));
 	}
 }

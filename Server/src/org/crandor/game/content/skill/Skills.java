@@ -259,9 +259,45 @@ public final class Skills {
 	 * @return The experience mod.
 	 */
 	private double getExperienceMod(int slot, double experience, boolean playerMod, boolean multiplyer) {
+		double mod = 20;
+
+		// exp multiplier over levels
+		if(hasLevel(slot, 10)){ mod *= 1.1; }
+		if(hasLevel(slot, 20)){ mod *= 1.2; }
+		if(hasLevel(slot, 30)){ mod *= 1.1; }
+		if(hasLevel(slot, 40)){ mod *= 1.0; }
+		if(hasLevel(slot, 50)){ mod *= 1.1; }
+		if(hasLevel(slot, 60)){ mod *= 1.5; }
+		if(hasLevel(slot, 70)){ mod *= 1.8; }
+		if(hasLevel(slot, 80)){ mod *= 1.9; }
+		if(hasLevel(slot, 90)){ mod *= 2.0; }
+
+		// skills that are to fast with tick increases
+		if(slot == FISHING) {
+			mod /=1.5;
+		}
+
+		// A boost for slow skills
+		if (slot == MAGIC || slot == PRAYER) {
+			mod *= 1.5;
+		}
+		if(slot == CRAFTING){
+			mod *=2;
+		}
+		if(slot == FARMING || slot == HERBLORE || slot == HUNTER) {
+			mod *=4;
+		}
+		if(slot == RUNECRAFTING || slot == SMITHING){
+			mod *= 6;
+		}
+		if(slot == AGILITY){
+			mod *=80;
+		}
+
+		return mod;
 		//Keywords for people ctrl + Fing the project
 		//xprate xp rate xp multiplier skilling rate
-		return 5.0;
+//		return 5.0;
 		/*if (!(entity instanceof Player)) {
 			return 1.0;
 		}

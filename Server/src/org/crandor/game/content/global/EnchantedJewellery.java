@@ -98,15 +98,15 @@ public enum EnchantedJewellery {
 		}
 		int itemIndex = getItemIndex(item);
 		Item replace = item;
-		if (!isLast(itemIndex)) {
-			if (!(isCrumble() && itemIndex == getIds().length - 1)) {
-				replace = getReplace(getNext(itemIndex));
-			}
-		} else {
-			if (!isCrumble()) {
-				replace = getReplace(getIds()[getIds().length - 1]);
-			}
-		}
+//		if (!isLast(itemIndex)) {
+//			if (!(isCrumble() && itemIndex == getIds().length - 1)) {
+//				replace = getReplace(getNext(itemIndex));
+//			}
+//		} else {
+//			if (!isCrumble()) {
+//				replace = getReplace(getIds()[getIds().length - 1]);
+//			}
+//		}
 		if (index > getLocations().length - 1) {
 			return;
 		}

@@ -574,14 +574,14 @@ public class Shop {
         if (amount < 1) {
             amount = getContainer(0).getAmount(item);
         }
-        return getSellValue(player, amount, item);
-//        if (getCurrency() == TOKKUL) {
-//            int tokkul = item.getDefinition().getConfiguration(ItemConfigSQLHandler.TOKKUL_PRICE, -1);
-//            if (tokkul > 0) {
-//                value = tokkul /= 10;
-//            }
-//        }
-//        return value;
+        int value = getSellValue(player, amount, item);
+        if (getCurrency() == TOKKUL) {
+            int tokkul = item.getDefinition().getConfiguration(ItemConfigSQLHandler.TOKKUL_PRICE, -1);
+            if (tokkul > 0) {
+                value = tokkul;
+            }
+        }
+        return value;
     }
 
     /**

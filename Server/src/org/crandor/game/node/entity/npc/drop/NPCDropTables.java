@@ -24,6 +24,7 @@ import org.crandor.tools.RandomFunction;
 import org.crandor.tools.StringUtils;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -35,7 +36,7 @@ public final class NPCDropTables {
 	/**
 	 * The drop rates (0=common, 1=uncommon, 2=rare, 3=very rare).
 	 */
-	public static final int[] DROP_RATES = { 750, 350, 250, 200 };
+	public static final int[] DROP_RATES = { 750, 150, 15, 5 };
 	
 	/**
 	 * The npcs that will display drop messages
@@ -101,7 +102,7 @@ public final class NPCDropTables {
 			int slot = RandomFunction.random(1000);
 			for (ChanceItem item : charmTable) {
 				if ((item.getTableSlot() & 0xFFFF) <= slot && (item.getTableSlot() >> 16) > slot) {
-					if (p != null && item != null && item.getId() != 0) {
+					if (p != null && item.getId() != 0) {
 						if (p.hasPerk(Perks.CHARM_COLLECTOR) && p.getSavedData().getGlobalData().isEnableCharmCollector() && p.getInventory().hasSpaceFor(item)) {
 							p.getInventory().add(item);
 							if (item.getAmount() == 1) {
@@ -118,40 +119,43 @@ public final class NPCDropTables {
 			}
 		}
 		if (!mainTable.isEmpty()) {
-//			if (mainTable.size() == 1 && RandomFunction.random(400) > 10 && npc.getId() != 49) {
-//				return;// temp for npcs with 1 drop size table.
-//			}
-			if (p != null && npc.getDefinition().getConfigurations().containsKey(NPCConfigSQLHandler.CLUE_LEVEL) && p.hasPerk(Perks.DETECTIVE) && RandomFunction.random(100) <= 5) {
-				Item item = new Item(2677);
-				createDrop(item, p, npc, npc.getDropLocation());
-				return;
-			}
-			boolean hasWealthRing = p != null && p.getEquipment().getNew(EquipmentContainer.SLOT_RING).getId() == 2572;
-			int slot = RandomFunction.random(mainTableSize);
-			for (ChanceItem item : mainTable) {
-				if (item.getSetRate() != -1) {
-					//p.sendMessage("Rate is <col=CC0000>1/"+item.getSetRate()+"</col> for <col=CC0000>"+item.getName()+"</col>.");
-					int rand = RandomFunction.random(item.getSetRate());
-					if (rand == 1) {						
-						createDrop(item.getRandomItem(), p, npc, npc.getDropLocation());
-						return;
+			for (int i = 0; i <= 3; i++) {
+				Collections.shuffle(mainTable);
+	//			if (mainTable.size() == 1 && RandomFunction.random(400) > 10 && npc.getId() != 49) {
+	//				return;// temp for npcs with 1 drop size table.
+	//			}
+				if (p != null && npc.getDefinition().getConfigurations().containsKey(NPCConfigSQLHandler.CLUE_LEVEL) && p.hasPerk(Perks.DETECTIVE) && RandomFunction.random(100) <= 5) {
+					Item item = new Item(2677);
+					createDrop(item, p, npc, npc.getDropLocation());
+					return;
+				}
+				boolean hasWealthRing = p != null && p.getEquipment().getNew(EquipmentContainer.SLOT_RING).getId() == 2572;
+				int slot = RandomFunction.random(mainTableSize);
+				for (ChanceItem item : mainTable) {
+					if (item.getSetRate() != -1) {
+						//p.sendMessage("Rate is <col=CC0000>1/"+item.getSetRate()+"</col> for <col=CC0000>"+item.getName()+"</col>.");
+						int rand = RandomFunction.random(item.getSetRate());
+						if (rand == 1) {
+							createDrop(item.getRandomItem(), p, npc, npc.getDropLocation());
+							return;
+						}
 					}
 				}
-			}
-			for (ChanceItem item : mainTable) {
-				boolean isRDTSlot = item.getId() == RareDropTable.SLOT_ITEM_ID;
-				boolean create = false;
-				if (item.getSetRate() == -1) {
-					create = ((item.getTableSlot() & 0xFFFF) <= slot && (item.getTableSlot() >> 16) > slot) || (isRDTSlot && hasWealthRing && RandomFunction.random(8) == 1);
-				}
-				if (create) {
-					if (isRDTSlot) {
-						item = RareDropTable.retrieve();
+				for (ChanceItem item : mainTable) {
+					boolean isRDTSlot = item.getId() == RareDropTable.SLOT_ITEM_ID;
+					boolean create = false;
+					if (item.getSetRate() == -1) {
+						create = ((item.getTableSlot() & 0xFFFF) <= slot && (item.getTableSlot() >> 16) > slot) || (isRDTSlot && hasWealthRing && RandomFunction.random(8) == 1);
 					}
-					if (item != null && p != null && npc != null) {
-						createDrop(item.getRandomItem(), p, npc, npc.getDropLocation());
+					if (create) {
+						if (isRDTSlot) {
+							item = RareDropTable.retrieve();
+						}
+						if (item != null && p != null) {
+							createDrop(item.getRandomItem(), p, npc, npc.getDropLocation());
+						}
+						break;
 					}
-					break;
 				}
 			}
 		}

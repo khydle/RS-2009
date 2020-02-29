@@ -52,7 +52,7 @@ public final class AbyssalNPC extends AbstractNPC {
 		super.finalizeDeath(killer);
 		if (killer instanceof Player) {
 			Player p = killer.asPlayer();
-			if (RandomFunction.random(750) < 12) {
+			if (RandomFunction.random(750) < 412) {
 				Item pouch = getPouch(p);
 				if (pouch != null) {
 					getDefinition().getDropTables().createDrop(pouch, p, this, getLocation());

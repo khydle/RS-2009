@@ -124,7 +124,7 @@ public final class PestControlActivityPlugin extends ActivityPlugin {
 				// type,
 				// default
 			} else if (success && p.getAttribute("pc_zeal", 0) >= 50) {
-				int amount = type.ordinal() + 50;
+				int amount = type.ordinal() + 200;
 				if (p.hasPerk(Perks.POWERPOINT)) {
 					amount *= 2;
 					p.sendMessage("<col=FF0000>You receive double the points!");

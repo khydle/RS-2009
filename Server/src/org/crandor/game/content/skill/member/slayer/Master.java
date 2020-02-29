@@ -9,39 +9,39 @@ import org.crandor.game.node.entity.player.Player;
  */
 public enum Master {
 	TURAEL(8273, new int[] {15, 50}, new int[] {0, 0, 0}), 
-	MAZCHNA(8274, new int[] {30, 70}, new int[] {2, 5, 15}) {
+	MAZCHNA(8274, new int[] {30, 70}, new int[] {30, 25, 45}) {
 		@Override
 		public boolean hasRequirment(Player player) {
 			return player.getProperties().getCurrentCombatLevel() >= 20;
 		}
 	},
-	VANNAKA(1597, new int[] {30, 80}, new int[] {4, 20, 60}) {
+	VANNAKA(1597, new int[] {30, 80}, new int[] {60, 100, 180}) {
 		@Override
 		public boolean hasRequirment(Player player) {
 			return player.getProperties().getCurrentCombatLevel() >= 40;
 		}
 	},
-	CHAELDAR(1598, new int[] {110, 170}, new int[] {10, 50, 150}) {
+	CHAELDAR(1598, new int[] {110, 170}, new int[] {150, 250, 450}) {
 		@Override
 		public boolean hasRequirment(Player player) {
 			return player.getProperties().getCurrentCombatLevel() >= 70 && player.getSkills().getLevel(Skills.SLAYER) >= 25;
 		}
 	},
 	
-	NIEVE(8649, new int[] {120, 185}, new int[] {12, 60, 180}) {
+	NIEVE(8649, new int[] {120, 185}, new int[] {180, 300, 540}) {
 		@Override
 		public boolean hasRequirment(Player player) {
 			return player.getProperties().getCurrentCombatLevel() >= 85;
 		}
 	},
 	
-	DURADEL(8275, new int[] {50, 199}, new int[] {15, 75, 225}) {
+	DURADEL(8275, new int[] {50, 199}, new int[] {375, 450, 675}) {
 		@Override
 		public boolean hasRequirment(Player player) {
 			return player.getProperties().getCurrentCombatLevel() >= 100 && player.getSkills().getLevel(Skills.SLAYER) >= 50;
 		}
 	},
-	WISE_OLD_MAN(3820, new int[] {20, 55}, new int[] {25, 90, 235}) {
+	WISE_OLD_MAN(3820, new int[] {20, 55}, new int[] {400, 550, 705}) {
 		@Override
 		public boolean hasRequirment(Player player) {
 			return player.getProperties().getCurrentCombatLevel() >= 105 && player.getSkills().getLevel(Skills.SLAYER) >= 75;

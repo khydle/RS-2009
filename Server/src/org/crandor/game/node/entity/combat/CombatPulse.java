@@ -375,7 +375,7 @@ public final class CombatPulse extends Pulse {
 			if (entity instanceof Player && victim != this.victim && victim != lastVictim) {
 				Player player = (Player) entity;
 				Item mask = player.getEquipment().get(EquipmentContainer.SLOT_HAT);
-				if (mask != null && mask.getId() >= 8901 && mask.getId() < 8920 && RandomFunction.random(50) == 0) {
+				if (mask != null && mask.getId() >= 8901 && mask.getId() < 8920 && RandomFunction.random(5) == 0) {
 					player.getPacketDispatch().sendMessage("Your black mask startles your enemy, you have " + 
 							(mask.getId() == 8919 ? "no" : Integer.toString((8920 - mask.getId()) / 2)) + " charges left.");
 					player.getEquipment().replace(new Item(mask.getId() + 2), EquipmentContainer.SLOT_HAT);

@@ -259,18 +259,21 @@ public final class Skills {
 	 * @return The experience mod.
 	 */
 	private double getExperienceMod(int slot, double experience, boolean playerMod, boolean multiplyer) {
-		double mod = 20;
+		double mod = 7.5;
 
 		// exp multiplier over levels
-		if(hasLevel(slot, 10)){ mod *= 1.1; }
-		if(hasLevel(slot, 20)){ mod *= 1.2; }
-		if(hasLevel(slot, 30)){ mod *= 1.1; }
-		if(hasLevel(slot, 40)){ mod *= 1.0; }
-		if(hasLevel(slot, 50)){ mod *= 1.1; }
-		if(hasLevel(slot, 60)){ mod *= 1.5; }
-		if(hasLevel(slot, 70)){ mod *= 1.8; }
-		if(hasLevel(slot, 80)){ mod *= 1.9; }
-		if(hasLevel(slot, 90)){ mod *= 2.0; }
+		if(hasLevel(slot, 10)){ mod *= 1.3; }
+		if(hasLevel(slot, 20)){ mod *= 1.6; }
+		if(hasLevel(slot, 30)){ mod *= 1.5; }
+		if(hasLevel(slot, 40)){ mod *= 1.5; }
+		if(hasLevel(slot, 50)){ mod *= 1.3; }
+		if(hasLevel(slot, 60)){ mod *= 1.2; }
+		if(hasLevel(slot, 70)){ mod *= 1.3; }
+		if(hasLevel(slot, 80)){ mod *= 1.2; }
+		if(hasLevel(slot, 90)){ mod *= 1.3; }
+		if(hasLevel(slot, 93)){ mod *= 1.1; }
+		if(hasLevel(slot, 95)){ mod *= 1.1; }
+		if(hasLevel(slot, 98)){ mod *= 1.1; }
 
 		// skills that are to fast with tick increases
 		if(slot == FISHING) {
@@ -278,16 +281,16 @@ public final class Skills {
 		}
 
 		// A boost for slow skills
-		if (slot == MAGIC || slot == PRAYER) {
+		if (slot == MAGIC || slot == PRAYER || slot == THIEVING || slot == MINING) {
 			mod *= 1.5;
 		}
-		if(slot == CRAFTING){
+		if(slot == CRAFTING || slot == SMITHING) {
 			mod *=2;
 		}
 		if(slot == FARMING || slot == HERBLORE || slot == HUNTER) {
 			mod *=4;
 		}
-		if(slot == RUNECRAFTING || slot == SMITHING){
+		if(slot == RUNECRAFTING || slot == CONSTRUCTION || slot == SUMMONING){
 			mod *= 6;
 		}
 		if(slot == AGILITY){

@@ -79,10 +79,10 @@ final class KeyboardListener implements KeyListener, FocusListener {
 
 			//causing issues when in other interfaces, such as GE interface. My quick thing impl didn't work - Jamix77
 
-			/**if (var1.getKeyCode() == KeyEvent.VK_SPACE)
+            if (var1.getKeyCode() == KeyEvent.VK_SPACE)
             {
                Class2.method78(40, false, 0);
-            }**/
+            }
 
 
             /**

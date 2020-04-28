@@ -37,46 +37,46 @@ public final class BarrowsEquipment extends DegradableEquipment {
 
 	@Override
 	public void degrade(Player player, Entity entity, Item item) {
-		int index = -1;
-		for (int i = 0; i < getItemIds().length; i++) {
-			if (item.getId() == getItemIds()[i]) {
-				index = i;
-				break;
-			}
-		}
-		if (index < 0) {
-			return;
-		}
-		if (item.getCharge() > 0) {
-			item.setCharge(item.getCharge() - 1);
-		}
-		int replaceId = item.getId();
-		if (index % 5 == 0 || item.getCharge() < 1) {
-			String name = item.getName();
-			int ch = -1;
-			if ((ch = name.indexOf("1")) > -1) {
-				name = name.substring(0, ch - 1);
-			} else if ((ch = name.indexOf("2")) > -1) {
-				name = name.substring(0, ch - 1);
-			} else if ((ch = name.indexOf("5")) > -1) {
-				name = name.substring(0, ch - 1);
-			} else if ((ch = name.indexOf("7")) > -1) {
-				name = name.substring(0, ch - 1);
-			}
-			player.getPacketDispatch().sendMessage("Your " + name + " has degraded.");
-			if (index % 5 == 4) {
-				if (player.getInventory().add(new Item(item.getId() + 1))) {
-					player.getEquipment().replace(null, getSlot());
-					return;
-				}
-				replaceId = item.getId() + 1;
-			} else {
-				replaceId = getItemIds()[index + 1];
-			}
-		}
-		if (replaceId != item.getId()) {
-			player.getEquipment().replace(new Item(replaceId), getSlot());
-		}
+//		int index = -1;
+//		for (int i = 0; i < getItemIds().length; i++) {
+//			if (item.getId() == getItemIds()[i]) {
+//				index = i;
+//				break;
+//			}
+//		}
+//		if (index < 0) {
+//			return;
+//		}
+//		if (item.getCharge() > 0) {
+//			item.setCharge(item.getCharge() - 1);
+//		}
+//		int replaceId = item.getId();
+//		if (index % 5 == 0 || item.getCharge() < 1) {
+//			String name = item.getName();
+//			int ch = -1;
+//			if ((ch = name.indexOf("1")) > -1) {
+//				name = name.substring(0, ch - 1);
+//			} else if ((ch = name.indexOf("2")) > -1) {
+//				name = name.substring(0, ch - 1);
+//			} else if ((ch = name.indexOf("5")) > -1) {
+//				name = name.substring(0, ch - 1);
+//			} else if ((ch = name.indexOf("7")) > -1) {
+//				name = name.substring(0, ch - 1);
+//			}
+//			player.getPacketDispatch().sendMessage("Your " + name + " has degraded.");
+//			if (index % 5 == 4) {
+//				if (player.getInventory().add(new Item(item.getId() + 1))) {
+//					player.getEquipment().replace(null, getSlot());
+//					return;
+//				}
+//				replaceId = item.getId() + 1;
+//			} else {
+//				replaceId = getItemIds()[index + 1];
+//			}
+//		}
+//		if (replaceId != item.getId()) {
+//			player.getEquipment().replace(new Item(replaceId), getSlot());
+//		}
 	}
 
 	@Override

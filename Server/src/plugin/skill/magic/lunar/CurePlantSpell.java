@@ -86,6 +86,7 @@ public final class CurePlantSpell extends MagicSpell {
 		player.animate(ANIMATION);
 		player.graphics(GRAPHIC);
 		player.getSkills().addExperience(Skills.FARMING, 91.5, true);
+		player.getSkills().addExperience(Skills.MAGIC, 60, true);
 		return true;
 	}
 }

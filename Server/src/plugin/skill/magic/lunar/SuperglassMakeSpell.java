@@ -80,6 +80,7 @@ public class SuperglassMakeSpell extends MagicSpell {
 				if (player.getInventory().remove(BUCKET_OF_SAND, SETS[setIndex])) {
 					player.getInventory().add(MOLTEN_GLASS);
 					player.getSkills().addExperience(Skills.CRAFTING, 10, true);
+					player.getSkills().addExperience(Skills.MAGIC, 78, true);
 				}
 			}
 		}

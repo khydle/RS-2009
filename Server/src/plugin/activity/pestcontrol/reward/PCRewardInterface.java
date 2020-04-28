@@ -1,6 +1,8 @@
 package plugin.activity.pestcontrol.reward;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import org.crandor.cache.def.impl.ItemDefinition;
@@ -322,7 +324,14 @@ public final class PCRewardInterface extends ComponentPlugin {
 	 * @author 'Vexia
 	 */
 	public enum Reward {
-		ATTACK(Skills.ATTACK, new int[] { 10, 34, 49, 56 }), STRENGTH(Skills.STRENGTH, new int[] { 11, 35, 50, 57 }), DEFENCE(Skills.DEFENCE, new int[] { 12, 36, 51, 58 }), RANGE(Skills.RANGE, new int[] { 13, 37, 52, 59 }), MAGIC(Skills.MAGIC, new int[] { 14, 38, 53, 60 }), HITPOINTS(Skills.HITPOINTS, new int[] { 15, 39, 54, 61 }), PRAYER(Skills.PRAYER, new int[] { 16, 40, 55, 62 }), HERB_PACK("Herb Pack", 30, new Item[] { Herbs.HARRALANDER.getHerb(), Herbs.RANARR.getHerb(), Herbs.TOADFLAX.getHerb(), Herbs.IRIT.getHerb(), Herbs.AVANTOE.getHerb(), Herbs.KWUARM.getHerb(), Herbs.GUAM.getHerb(), Herbs.MARRENTILL.getHerb() }, new int[] { 32, 45 }) {
+		ATTACK(Skills.ATTACK, new int[] { 10, 34, 49, 56 }),
+		STRENGTH(Skills.STRENGTH, new int[] { 11, 35, 50, 57 }),
+		DEFENCE(Skills.DEFENCE, new int[] { 12, 36, 51, 58 }),
+		RANGE(Skills.RANGE, new int[] { 13, 37, 52, 59 }),
+		MAGIC(Skills.MAGIC, new int[] { 14, 38, 53, 60 }),
+		HITPOINTS(Skills.HITPOINTS, new int[] { 15, 39, 54, 61 }),
+		PRAYER(Skills.PRAYER, new int[] { 16, 40, 55, 62 }),
+		HERB_PACK("Herb Pack", 30, new Item[] { Herbs.HARRALANDER.getHerb(), Herbs.RANARR.getHerb(), Herbs.TOADFLAX.getHerb(), Herbs.IRIT.getHerb(), Herbs.AVANTOE.getHerb(), Herbs.KWUARM.getHerb(), Herbs.GUAM.getHerb(), Herbs.MARRENTILL.getHerb() }, new int[] { 32, 45 }) {
 			@Override
 			public boolean checkItemRequirement(final Player player, final int option) {
 				if (player.getSkills().getLevel(Skills.HERBLORE) < 25) {
@@ -342,7 +351,7 @@ public final class PCRewardInterface extends ComponentPlugin {
 				return true;
 			}
 		},
-		SEED_PACK("Seed Pack", 15, new Item[] { new Item(5320), new Item(5322), new Item(5100) }, new int[] { 33, 48 }) {
+		SEED_PACK("Seed Pack", 150, new Item[] { new Item(5283), new Item(5284), new Item(5285), new Item(5289), new Item(5288), new Item(5286), new Item(5313), new Item(5314), new Item(5315), new Item(5316) }, new int[] { 33, 48 }) {
 			@Override
 			public boolean checkItemRequirement(final Player player, final int option) {
 				if (player.getSkills().getLevel(Skills.FARMING) < 25) {
@@ -679,7 +688,9 @@ public final class PCRewardInterface extends ComponentPlugin {
 			int left = build;
 			List<Item> pack = new ArrayList<>();
 			int amt = 0;
-			for (Item i : getReward()) {
+			List<Item> rewardList = Arrays.asList(getReward());
+			Collections.shuffle(rewardList);
+			for (Item i : rewardList) {
 				amt = this == SEED_PACK || this == HERB_PACK ? RandomFunction.random(1, 5) : RandomFunction.random(16, 25);
 				if (amt > left) {
 					amt = left;

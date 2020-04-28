@@ -73,11 +73,11 @@ public final class GodwarsMapzone extends MapZone implements Plugin<Object> {
 				componentId = player.getInterfaceManager().isResizable() ? 598 : 599;
 			}
 			openOverlay(player, componentId);
-			if (player.getDetails().getRights() == Rights.ADMINISTRATOR) {
-				for (GodWarsFaction faction : GodWarsFaction.values()) {
-					increaseKillcount(player, faction, 40);
-				}
-			}
+//			if (player.getDetails().getRights() == Rights.ADMINISTRATOR) {
+//				for (GodWarsFaction faction : GodWarsFaction.values()) {
+//					increaseKillcount(player, faction, 40);
+//				}
+//			}
 		}
 		return true;
 	}

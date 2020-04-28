@@ -150,13 +150,13 @@ public enum Tasks {
 	TUROTHS(new Task(new int[] { 1626, 1627, 1628, 1629, 1630 }, new String[] { "Turoths are Slayer monsters that require a Slayer level of 55 to kill" }, 55, new Master[] { Master.CHAELDAR, Master.CHAELDAR, Master.NIEVE }, false)),
 	TZHAAR(new Task(new int[] { 2591, 2592, 2593, 2745, 2594, 2595, 2596, 2597, 2604, 2605, 2606, 2607, 2608, 2609, 7755, 7753, 2598, 2599, 2600, 2601, 2610, 2611, 2612, 2613, 2614, 2615, 2616, 2624, 2617, 2618, 2625, 2602, 2603, 7754, 7767, 2610, 2611, 2612, 2613, 2614, 2615, 2616, 2624, 2625, 2627, 2628, 2629, 2630, 2631, 2632, 7746, 7747, 7748, 7749, 7750, 7751, 7752, 7753, 7754, 7755, 7756, 7757, 7758, 7759, 7760, 7761, 7762, 7763, 7764, 7765, 7766, 7767, 7768, 7769, 7770, 7771, 7747, 7747, 7748, 7749, 7750, 7751, 7752, 7753, 7757, 7765, 7769, 7768 }, new String[] { "Young Tzhaar's of the century are furious with your kind." }, 1, new Master[] { Master.DURADEL }, false)),
 	VAMPIRES(new Task(new int[] { 1023, 1220, 1223, 1225, 6214 }, new String[] { "Vampies arr equiped with large fangs", "they can do serious damage." }, 1, new Master[] { Master.MAZCHNA, Master.VANNAKA }, false)),
-	/*WALL_BEASTS(new Task(new int[] { 7823 }, new String[] { "A spiny helmet or equivalent is required to start fighting one " }, 35, new Master[] { Master.MAZCHNA }, false, Equipment.SPINY_HELMET) {
+	WALL_BEASTS(new Task(new int[] { 7823 }, new String[] { "A spiny helmet or equivalent is required to start fighting one " }, 35, new Master[] { Master.MAZCHNA }, false, Equipment.SPINY_HELMET) {
 		@Override
 		public boolean isDisabled() {
 			return true;
 		}
 	}),
-	WARPED_TERRORBIRDS(new Task(new int[] { 6285, 6286, 6287, 6288, 6289, 6290, 6291, 6292, 6293, 6294, 6295, 6322, 6323, 6324, 6325, 6326, 6327, 6328, 6329, 6330, 6331, 6332, }, new String[] { "They require 56 Slayer and a Crystal chime to be killed. " }, 56, new Master[] { Master.DURADEL }, false) {
+	/*WARPED_TERRORBIRDS(new Task(new int[] { 6285, 6286, 6287, 6288, 6289, 6290, 6291, 6292, 6293, 6294, 6295, 6322, 6323, 6324, 6325, 6326, 6327, 6328, 6329, 6330, 6331, 6332, }, new String[] { "They require 56 Slayer and a Crystal chime to be killed. " }, 56, new Master[] { Master.DURADEL }, false) {
 		@Override
 		public boolean isDisabled() {
 			return true;
